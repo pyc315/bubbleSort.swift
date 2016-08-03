@@ -1,0 +1,15 @@
+extension Deck {
+    
+    func bubbleSort( ) {
+        var index = cards.count
+        for i in 0..<index-1 {
+            for j in 0..<index-i-1 {                        // (swift) i += 1 <=  (c languge) i++
+                if cards[ j ].value > cards[ j+1].value {
+                    swap ( j , j+1)
+                }
+            }
+        }
+        
+    }
+}
+
